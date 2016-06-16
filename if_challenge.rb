@@ -82,11 +82,39 @@
 
 
 
-puts "Enter the number you desire: "
 
-x = gets
-puts "the number entered: #{x}"
-sum = x+x
+
+loop do
+    puts "Enter the number you desire: "
+
+      while x = gets.chomp.to_f
+
+    puts "The number you entered: #{x}"
+
+    puts "Enter another number then enter to keep going or press enter again to exit "
+    x = gets.chomp.to_f
+    # gets X
+    # else do
+    # puts "do you need to enter another digit?"
+    # else
+    # puts "done"
+    # break
+    # end
+    # puts "you are now finished, press enter again to exit the run,thank you!"
+
+    # gets = x
+    # puts "#{x}" + "#{x}"
+      break
+      until user_input = enter 
+end
+end
+end
+
+
+
+
+
+
 # x+x/2 = average
 #
 # if user_input == puts "Enter another number: "
