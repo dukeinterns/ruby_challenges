@@ -107,26 +107,28 @@
 #       break
 #       until user_input = enter
 # end
+# endirb
 # end
-# end
-puts "Enter the number you desire:"
-num = gets.chomp.to_f
+
 list = []
+total = 0
 loop do
-  list << num
-  puts "enter another number: "
-  num = gets.chomp.to_f
-  if num == 0 then
-puts "the numbers entered above are: #{list}"
-  total = 0
-  total = total + num
-puts "the sum of the numbers entered is : #{total.to_f}"
-puts list.length
-# average = total.lenth/2
-  break
+  puts "Enter the number you desire:"
+  check = gets.chomp
+  num = check.to_f
+  if check == ""
+    break
+  elsif num == 0.0 && check != "0"
+    puts "#{check} is not a valid number"
+  else
+    total += num
+    list << num
   end
 end
 
+puts "the numbers entered above are: #{list}"
+puts "Your total is #{total}"
+puts "your average is #{total/list.length}"
 
 
 
