@@ -84,31 +84,52 @@
 
 
 
+# loop do
+#     puts "Enter the number you desire: "
+#
+#       while x = gets.chomp.to_f
+#
+#     puts "The number you entered: #{x}"
+#     puts"the number you entered #{x+x}is blank"
+#     puts "Enter another number then enter to keep going or press enter again to exit "
+#     x = gets.chomp.to_f
+#     # gets X
+#     # else do
+#     # puts "do you need to enter another digit?"
+#     # else
+#     # puts "done"
+#     # break
+#     # end
+#     # puts "you are now finished, press enter again to exit the run,thank you!"
+#
+#     # gets = x
+#     # puts "#{x}" + "#{x}"
+#       break
+#       until user_input = enter
+# end
+# end
+# end
+puts "Enter the number you desire:"
+num = gets.chomp.to_f
+list = []
 loop do
-    puts "Enter the number you desire: "
-
-      while x = gets.chomp.to_f
-
-    puts "The number you entered: #{x}"
-
-    puts "Enter another number then enter to keep going or press enter again to exit "
-    x = gets.chomp.to_f
-    # gets X
-    # else do
-    # puts "do you need to enter another digit?"
-    # else
-    # puts "done"
-    # break
-    # end
-    # puts "you are now finished, press enter again to exit the run,thank you!"
-
-    # gets = x
-    # puts "#{x}" + "#{x}"
-      break
-      until user_input = enter 
+  list << num
+  puts "enter another number: "
+  num = gets.chomp.to_f
+  if num == 0 then
+puts "the numbers entered above are: #{list}"
+  total = 0
+  total = total + num
+puts "the sum of the numbers entered is : #{total.to_f}"
+puts list.length
+# average = total.lenth/2
+  break
+  end
 end
-end
-end
+
+
+
+
 
 
 
