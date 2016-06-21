@@ -1,20 +1,19 @@
 attempts = 7
-    randomnum = rand(50)
+randomnum = rand(50)
 
 until attempts > 7
   puts "guesses left : #{attempts}"
   print "guess the number! : "
   x = gets.chomp.to_i
-  x = check.to_f
-  if check == "exit"
+  if x == "exit"
     break
-  elsif x == 0.0 && check != "0"
-    puts "#{check} is not a valid number"
+  elsif x == 0.0 && x != "0"
+    puts "#{x} is not a valid number"
     break
   if x > randomnum
-    puts "t The number you entered was too high !"
+    puts " The number you entered was too high !"
   elsif x < randomnum
-    puts "too low!"
+    puts "The number you entered was too low!"
   else x == randomnum
     puts "You guess was correct!"
       break
