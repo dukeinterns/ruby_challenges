@@ -1,7 +1,7 @@
 attempts = 7
     randomnum = rand(50)
-loop do
-  until attempts > 7
+
+until attempts > 7
   puts "guesses left : #{attempts}"
   print "guess the number! : "
   x = gets.chomp.to_i
@@ -18,11 +18,11 @@ loop do
   else x == randomnum
     puts "You guess was correct!"
       break
-      attempts -= 1
+      attempts != 1
 end
-puts "Game over, the answer is: #{randomnum}"
+  puts "Game over, the answer is: #{randomnum}"
 end
-
+end
 
 # x = rand(50)
 # # attempts == gets.chomp
