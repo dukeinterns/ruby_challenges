@@ -17,12 +17,11 @@ until attempts > 7
   else x == randomnum
     puts "You guess was correct!"
       break
-      attempts != 1
-end
+      attempts -= 1
   puts "Game over, the answer is: #{randomnum}"
 end
 end
-
+end
 # x = rand(50)
 # # attempts == gets.chomp
 #   # if attempts >= 7
