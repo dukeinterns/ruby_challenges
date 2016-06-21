@@ -1,5 +1,5 @@
 attempts = 7
-randomnum = rand(50)
+randomnum = rand(1..50)
 
 until attempts > 7
   puts "guesses left : #{attempts}"
@@ -10,17 +10,20 @@ until attempts > 7
   elsif x == 0.0 && x != "0"
     puts "#{x} is not a valid number"
     break
+  elsif x
   elsif x > randomnum
     puts " The number you entered was too high !"
   elsif x < randomnum
     puts "The number you entered was too low!"
   else x == randomnum
     puts "Your guess was correct!"
-      break
-    attempts = 1
-  puts "Game over, the answer is: #{randomnum}"
+end
+    attempts != 1
+end
+  puts "Game over the answer is : #{randomnum}"
 end
 end
+
 # x = rand(50)
 # # attempts == gets.chomp
 #   # if attempts >= 7
