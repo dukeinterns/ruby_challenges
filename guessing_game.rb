@@ -10,16 +10,15 @@ until attempts > 7
   elsif x == 0.0 && x != "0"
     puts "#{x} is not a valid number"
     break
-  if x > randomnum
+  elsif x > randomnum
     puts " The number you entered was too high !"
   elsif x < randomnum
     puts "The number you entered was too low!"
   else x == randomnum
-    puts "You guess was correct!"
+    puts "Your guess was correct!"
       break
-      attempts -= 1
+    attempts -= 1
   puts "Game over, the answer is: #{randomnum}"
-end
 end
 end
 # x = rand(50)
