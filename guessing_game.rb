@@ -17,7 +17,7 @@ until attempts > 7
   else x == randomnum
     puts "Your guess was correct!"
       break
-    attempts -= 1
+    attempts = 1
   puts "Game over, the answer is: #{randomnum}"
 end
 end
