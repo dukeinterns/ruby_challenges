@@ -1,5 +1,5 @@
-def multiply(45)
-  puts multiply 45*2
+def multiply(4,3)
+  puts m
 end
 
 

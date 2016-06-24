@@ -29,6 +29,10 @@ end
   puts "Game over the answer is : #{randomnum}"
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+
+>>>>>>> a35d55dc322a64dc0795c18df2ba4c5b0bd0c123
 
 # x = rand(50)
 # # attempts == gets.chomp
