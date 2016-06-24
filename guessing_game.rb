@@ -9,6 +9,7 @@ until attempts == 0
 
   if x > randomnum
     puts " Your guess was too high !"
+
   elsif x < randomnum
     puts "Your guess was too low!"
   elsif x == randomnum
@@ -26,6 +27,8 @@ until attempts == 0
     attempts -= 1
 end
   puts "Game over the answer is : #{randomnum}"
+<<<<<<< HEAD
+=======
 
 # x = rand(50)
 # # attempts == gets.chomp
@@ -44,3 +47,4 @@ end
 #     puts "The number you entered was too low"
 #     puts "The correct number was : #{x}"
 # end
+>>>>>>> 9482fb328068dcf5bdc59107ca2994380e01c1f8
