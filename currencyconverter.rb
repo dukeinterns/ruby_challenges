@@ -1,15 +1,22 @@
 require "./currencycode.rb"
 
 class CurrencyConverter
-    def initialize(denomination:)
-      euro = { "€" => 0.90 }
-      mex = {"$" => 18.93 }
-      jap = {"¥" => 102 }
-      gbp = {"£" => 0..75 }
+    def initialize(currency:,converter:,answer:)
+      @currency = currency
+      @converter = converter
+      @annswer = answer
+      r = {"eur" => 0.90,"mex" => 18.93,"jap" => 102, "gbp" => 0.75}
+end
+def currency
+  @currency
+end
+def converter
+  @converter
+end
+def answer
+  @answer
+
 
 end
-  puts" Enter the amount of USD you would like to convert:"
-  x = gets.chomp.to_i
-  puts " you entered $#{x}, what currency would you like to convert to?"
-  y = gets.chomp.to_i
+
 end
