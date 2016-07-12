@@ -5,6 +5,30 @@ require 'minitest/pride'
 # method, and a class method.
 
 # WRITE YOUR CODE HERE.
+class Goat
+  def initialize(name)
+    @name= name
+  end
+
+  def name
+     @name
+  end
+
+  private
+
+  def hate_cats
+    return "I hate cats!"
+  end
+
+  def Goat.number_of_legs
+    return 4
+  end
+
+end
+
+
+
+
 
 
 class ClassesChallenge < MiniTest::Test
@@ -18,8 +42,8 @@ class ClassesChallenge < MiniTest::Test
   end
 
   def test_reader
-    amalthea = Goat.new("Amalthea")
-    assert_equal "Amalthea", amalthea.name
+    amalthea = Goat.new("Danai")
+    assert_equal "Danai", amalthea.name
     assert_raises(NoMethodError) do
       amalthea.name = "Djali"
     end

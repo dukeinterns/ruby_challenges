@@ -14,7 +14,7 @@ until attempts == 0
     puts "Your guess was too low!"
   elsif x == randomnum
     puts "Your guess was correct!"
-      break
+          break
   elsif x == " "
     puts "invalid input, try again"
     attempts += 1
@@ -26,29 +26,6 @@ until attempts == 0
   end
     attempts -= 1
 end
+  if x > randomnum || x < randomnum
   puts "Game over the answer is : #{randomnum}"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> a35d55dc322a64dc0795c18df2ba4c5b0bd0c123
-
-# x = rand(50)
-# # attempts == gets.chomp
-#   # if attempts >= 7
-#   #   break
-# loop do
-#   puts " Guess the number!"
-#   if x ==gets.chomp.to_i
-#     puts "Your guess was correct! (:"
-#     break
-#   elsif
-#     puts "incorrect guess:("
-#   elsif x > gets.chomp.to_i
-#     puts "The number you entered was too high"
-#   else x < get.chomp.to_i
-#     puts "The number you entered was too low"
-#     puts "The correct number was : #{x}"
-# end
->>>>>>> 9482fb328068dcf5bdc59107ca2994380e01c1f8
+end

@@ -129,25 +129,3 @@ end
 puts "the numbers entered above are: #{list}"
 puts "Your total is #{total}"
 puts "your average is #{total/list.length}"
-
-
-
-
-
-
-
-
-
-# x+x/2 = average
-#
-# if user_input == puts "Enter another number: "
-#   x = gets
-# else exit
-# end
-#
-#
-#
-#
-#
-# puts "The total of all the nnumbers you listed is: #{sum}"
-# puts "The Average of all the numbers you listed is:#{average} "
