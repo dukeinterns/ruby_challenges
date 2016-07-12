@@ -10,9 +10,9 @@ require"./currencyconverter.rb"
   code = gets.chomp
 
   currency = Currency.new(amount: amount, code: code)
-  converter = Converter.new(currency:currency, answer:answer)
+  converter = CurrencyConverter.new(currency:currency)
 
-  answer = currency.convert
+  answer = converter.currency
+  puts amount
 
-  return
-  answer
+  puts converter.convert
